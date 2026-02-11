@@ -76,10 +76,10 @@
         ARROW {
             bindings = <
 &trans  &trans
-&trans  &trans  &kp RC(LEFT_ARROW)  &kp UP_ARROW    &kp RC(RIGHT_ARROW)  &trans  &trans  &kp RC(LEFT_ARROW)  &kp UP_ARROW  &kp RC(RIGHT)  &trans  &trans
-&trans  &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans  &trans  &kp LEFT            &kp DOWN      &kp RIGHT      &trans  &trans
-&trans  &trans  &trans              &trans          &trans               &trans  &trans  &trans              &trans        &trans         &trans  &trans
-&trans  &trans  &trans              &trans          &trans               &trans  &trans  &trans              &trans        &trans
+&trans  &kp LC(UP_ARROW)    &kp RC(LEFT_ARROW)  &kp UP_ARROW    &kp RC(RIGHT_ARROW)  &trans  &trans  &kp RC(LEFT_ARROW)  &kp UP_ARROW  &kp RC(RIGHT)  &kp RC(UP_ARROW)    &trans
+&trans  &kp LC(DOWN_ARROW)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans  &trans  &kp LEFT            &kp DOWN      &kp RIGHT      &kp RC(DOWN_ARROW)  &trans
+&trans  &trans              &trans              &trans          &trans               &trans  &trans  &trans              &trans        &trans         &trans              &trans
+&trans  &trans              &trans              &trans          &trans               &trans  &trans  &trans              &trans        &trans
             >;
 
             sensor-bindings = <
