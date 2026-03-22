@@ -31,11 +31,11 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE        &kp CARET
-&kp TAB           &kp Q             &kp W         &kp E        &kp R        &kp T        &kp Y            &kp U        &kp I        &kp O                 &kp P          &kp MINUS
-&kp LEFT_CONTROL  &kp A             &kp S         &kp D        &kp F        &kp G        &kp H            &kp J        &kp K        &kp L                 &kp SEMICOLON  &kp COLON
-&kp LEFT_SHIFT    &kp Z             &kp X         &kp C        &kp V        &kp B        &kp N            &kp M        &kp COMMA    &kp DOT               &kp DOT        &kp SLASH
-&kp LCTRL         &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 6 LANG2  &lt 5 SPACE  &lt 4 LANG1  &lt 3 BACKSPACE  &lt 2 ENTER  &kp AT_SIGN  &kp NON_US_BACKSLASH
+&kp ENTER       &key_repeat
+&kp ESCAPE      &kp Q             &kp W         &kp E        &kp R        &kp T        &kp Y            &kp U        &kp I                 &kp O      &kp P          &kp AT_SIGN
+&kp TAB         &kp A             &kp S         &kp D        &kp F        &kp G        &kp H            &kp J        &kp K                 &kp L      &kp SEMICOLON  &kp COLON
+&kp LEFT_SHIFT  &kp Z             &kp X         &kp C        &kp V        &kp B        &kp N            &kp M        &kp COMMA             &kp DOT    &kp SLASH      &kp NON_US_BACKSLASH
+&kp LCTRL       &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 6 LANG2  &lt 5 SPACE  &lt 4 LANG1  &lt 3 BACKSPACE  &lt 2 ENTER  &kp NON_US_BACKSLASH  &kp MINUS
             >;
 
             sensor-bindings =
@@ -60,11 +60,11 @@
 
         SCROLL {
             bindings = <
-&trans  &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9     &kp NUMBER_0          &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans          &trans           &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&trans  &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans          &trans           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans  &trans        &trans        &trans        &trans        &trans        &trans        &trans        &kp LEFT_BRACE  &kp RIGHT_BRACE
+&trans                &trans
+&trans                &kp NUMBER_1           &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9     &kp NUMBER_0          &trans
+&kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans        &trans        &trans        &trans        &trans        &trans        &trans          &trans           &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &trans        &trans        &trans        &trans        &trans        &trans          &trans           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp LEFT_BRACE        &kp RIGHT_BRACE        &trans        &trans        &trans        &trans        &trans        &trans        &kp LEFT_BRACE  &kp RIGHT_BRACE
             >;
 
             sensor-bindings = <
@@ -90,11 +90,11 @@
 
         NUM {
             bindings = <
-&trans                   &trans
-&kp GRAVE                &kp NUMBER_7  &kp NUMBER_8  &kp LG(LS(NUMBER_4))  &kp PLUS      &trans  &trans  &kp BACKSLASH    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SEMICOLON
-&kp SLASH                &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6          &kp ASTERISK  &trans  &trans  &kp EXCLAMATION  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SQT
-&mt LEFT_SHIFT NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp PERIOD    &trans  &trans  &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
-&trans                   &trans        &trans        &trans                &trans        &trans  &trans  &kp LEFT_SHIFT   &trans        &trans
+&trans        &trans
+&kp PLUS      &trans  &kp N7        &kp N8        &kp N9        &trans      &trans      &kp N7        &kp N8        &kp N9        &trans  &kp PLUS
+&kp MINUS     &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD  &kp PERIOD  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &kp MINUS
+&kp ASTERISK  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans      &kp N0      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &kp ASTERISK
+&kp EQUAL     &trans  &trans        &trans        &trans        &trans      &trans      &trans        &trans        &kp EQUAL
             >;
 
             sensor-bindings = <
@@ -120,11 +120,11 @@
 
         BT {
             bindings = <
-&trans         &trans
-&kp LG(Q)      &kp LC(W)  &trans     &trans     &trans  &trans  &bt BT_PRV    &bt BT_NXT    &trans        &trans        &trans        &trans
-&kp LG(LS(Z))  &trans     &kp LC(C)  &trans     &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
-&kp LG(Z)      &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans
-&trans         &trans     &trans     &trans     &trans  &trans  &trans        &trans        &trans        &trans
+&bt BT_PRV  &bt BT_NXT
+&trans      &trans      &trans  &trans  &trans  &trans  &bt BT_PRV    &bt BT_NXT    &trans        &trans        &trans        &trans
+&trans      &trans      &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+&trans      &trans      &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans
+&trans      &trans      &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans
             >;
 
             sensor-bindings = <
